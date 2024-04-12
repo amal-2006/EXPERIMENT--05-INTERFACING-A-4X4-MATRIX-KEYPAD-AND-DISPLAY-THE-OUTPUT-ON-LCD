@@ -190,8 +190,6 @@ int main(void)
   }
 
 }
-```
-```
 void keypad()
 {
 	Lcd_PortType ports[] = {GPIOA,GPIOA,GPIOA,GPIOA};
@@ -210,6 +208,8 @@ void keypad()
 	col4=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_7);
 	HAL_Delay(100);
 	Lcd_cursor(&lcd, 0,0);
+```
+```
 
 	if(!col1)
 	{
