@@ -190,6 +190,8 @@ int main(void)
   }
 
 }
+```
+```
 void keypad()
 {
 	Lcd_PortType ports[] = {GPIOA,GPIOA,GPIOA,GPIOA};
