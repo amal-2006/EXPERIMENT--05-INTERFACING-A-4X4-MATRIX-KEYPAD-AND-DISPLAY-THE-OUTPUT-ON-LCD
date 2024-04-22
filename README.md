@@ -220,7 +220,8 @@ void keypad()
 		Lcd_string(&lcd, "Key pressed is:8");
 		HAL_Delay(500);
 	}
-
+```
+```
 	else if(!col3)
 	{
 		Lcd_string(&lcd, "Key pressed is:9");
