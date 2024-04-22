@@ -225,6 +225,8 @@ void keypad()
 		Lcd_string(&lcd, "Key pressed is:%");
 		HAL_Delay(500);
 	}
+```
+```
 	HAL_Delay(500);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
