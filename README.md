@@ -208,28 +208,31 @@ void keypad()
 	col4=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_7);
 	HAL_Delay(100);
 	Lcd_cursor(&lcd, 0,0);
-```
-```
 
 	if(!col1)
 	{
 		Lcd_string(&lcd, "Key pressed is:7");
+		HAL_Delay(500);
 	}
 
 	else if(!col2)
 	{
 		Lcd_string(&lcd, "Key pressed is:8");
+		HAL_Delay(500);
 	}
 
 	else if(!col3)
 	{
 		Lcd_string(&lcd, "Key pressed is:9");
+		HAL_Delay(500);
 	}
 
 	else if(!col4)
 	{
 		Lcd_string(&lcd, "Key pressed is:%");
+		HAL_Delay(500);
 	}
+	HAL_Delay(500);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_RESET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
@@ -243,20 +246,24 @@ void keypad()
 	if(!col1)
 		{
 			Lcd_string(&lcd, "Key pressed is:4");
+			HAL_Delay(500);
 		}
 	else if(!col2)
 		{
 			Lcd_string(&lcd, "Key pressed is:5");
+			HAL_Delay(500);
 		}
 	else if(!col3)
 		{
 			Lcd_string(&lcd, "Key pressed is:6");
+			HAL_Delay(500);
 		}
 	else if(!col4)
 		{
 			Lcd_string(&lcd, "Key pressed is:X");
+			HAL_Delay(500);
 		}
-
+	HAL_Delay(500);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_RESET);
@@ -270,20 +277,24 @@ void keypad()
 	if(!col1)
 		{
 			Lcd_string(&lcd, "Key pressed is:1");
+			HAL_Delay(500);
 		}
 	else if(!col2)
 		{
 			Lcd_string(&lcd, "Key pressed is:2");
+			HAL_Delay(500);
 		}
 	else if(!col3)
 		{
 			Lcd_string(&lcd, "Key pressed is:3");
+			HAL_Delay(500);
 		}
 	else if(!col4)
 		{
 			Lcd_string(&lcd, "Key pressed is:-");
+			HAL_Delay(500);
 		}
-
+	HAL_Delay(500);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_1, GPIO_PIN_SET);
 	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_2, GPIO_PIN_SET);
@@ -297,24 +308,29 @@ void keypad()
 	if(!col1)
 		{
 			Lcd_string(&lcd, "Key pressed is:ON");
+			HAL_Delay(500);
 		}
 	else if(!col2)
 		{
 			Lcd_string(&lcd, "Key pressed is:0");
+			HAL_Delay(500);
 		}
 	else if(!col3)
 		{
 			Lcd_string(&lcd, "Key pressed is:=");
+			HAL_Delay(500);
 		}
 	else if(!col4)
 		{
 			Lcd_string(&lcd, "Key pressed is:+");
+			HAL_Delay(500);
 		}
 		else
 		{
 			Lcd_string(&lcd, "No key pressed");
 			HAL_Delay(500);
 		}
+	HAL_Delay(500);
 	Lcd_clear(&lcd);
 }
 
@@ -414,9 +430,8 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output screen shots of proteus:
-![Proteus Screenshot](https://github.com/amal-2006/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/148410730/dd27f536-e189-4c0d-b8cb-e995c15ed5ec)
+![Uploading Proteus Screenshot.png…]()
 
- 
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
  ![Circuit Layout](https://github.com/amal-2006/EXPERIMENT--05-INTERFACING-A-4X4-MATRIX-KEYPAD-AND-DISPLAY-THE-OUTPUT-ON-LCD/assets/148410730/8007ee5f-bd51-4c88-a99c-7a864bf113b0)
