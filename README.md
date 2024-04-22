@@ -179,12 +179,9 @@ int main(void)
 {
 
   HAL_Init();
-
   SystemClock_Config();
-
   MX_GPIO_Init();
-
-    while (1)
+  while (1)
   {
 	  keypad();
   }
@@ -208,26 +205,21 @@ void keypad()
 	col4=HAL_GPIO_ReadPin(GPIOC,GPIO_PIN_7);
 	HAL_Delay(100);
 	Lcd_cursor(&lcd, 0,0);
-
 	if(!col1)
 	{
 		Lcd_string(&lcd, "Key pressed is:7");
 		HAL_Delay(500);
 	}
-
 	else if(!col2)
 	{
 		Lcd_string(&lcd, "Key pressed is:8");
 		HAL_Delay(500);
 	}
-```
-```
 	else if(!col3)
 	{
 		Lcd_string(&lcd, "Key pressed is:9");
 		HAL_Delay(500);
 	}
-
 	else if(!col4)
 	{
 		Lcd_string(&lcd, "Key pressed is:%");
